@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+BACKEND_APPS = [
+    "source.apps.inventory.apps.InventoryConfig",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+INSTALLED_APPS += BACKEND_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
